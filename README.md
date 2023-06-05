@@ -15,5 +15,9 @@ mis lenguajes de programacion proncipales son el JS-TS.
 otros que estoy aprendiendo son el Java y c#.
 ##  Codigos abiertos
 No tengo muchos codigos abiertos pq aun soy novato en esto de la programacion.
-## Commits
-![OscarDev-JS](https://github-readme-stats.vercel.app/api?username=OscarDev-JS&show_icons=true&theme=radical)
+# 📑 Github status
+![OscarDev-JS status](https://github-readme-stats.vercel.app/api?username=OscarDev-JS&show_icons=true&theme=radical)
+
+# Discord
+
+![Mi estado de discord](https://api.zeew.dev/resources/discord/es/full_card/518251720128856084)
