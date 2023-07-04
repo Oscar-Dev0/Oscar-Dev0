@@ -16,7 +16,7 @@ otros que estoy aprendiendo son el Java y c#.
 ##  Codigos abiertos
 No tengo muchos codigos abiertos pq aun soy novato en esto de la programacion.
 # 📑 Github status
-![OscarDev-JS status](https://github-readme-stats.vercel.app/api?username=OscarDev-JS&show_icons=true&theme=radical)
+![OscarDev-JS status](https://github-readme-stats.vercel.app/api?username=Oscar-Dev0&show_icons=true&theme=radical)
 
 # Discord
 
