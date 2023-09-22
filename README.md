@@ -20,4 +20,5 @@ No tengo muchos codigos abiertos pq aun soy novato en esto de la programacion.
 
 # Discord
 
+![D](https://camo.githubusercontent.com/84fe5a8cbd038370915952a3b238370cf4083ba228e6a4d2504986d88358cae7/68747470733a2f2f6170692e7a6565772e6465762f7265736f75726365732f646973636f72642f65732f66756c6c5f636172642f353138323531373230313238383536303834)
 ![Discord Card](https://api.zeew.dev/resources/discord/es/full_card/518251720128856084)
