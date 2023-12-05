@@ -1,7 +1,6 @@
 <!-- Imagen de perfil -->
-<picture>
-  <h1><img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width="50px" alt="Oscar Dev"> Biografía de Oscar Dev</h1>
-</picture>
+ # <img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/about_me.gif" width="50px" alt="Oscar Dev"> Biografía de Oscar Dev
+
 
 <!-- Biografía de Oscar Dev -->
 <div align="center">
