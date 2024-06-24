@@ -14,7 +14,7 @@
   <h2>Información General <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h2>
   <ul>
     <li><strong>Nombre:</strong> Oscar Dev.</li>
-    <li><strong>Edad:</strong> 19 años.</li>
+    <li><strong>Edad:</strong> 20 años.</li>
     <li><strong>País:</strong> Costa Rica.</li>
   </ul>
 </section>
