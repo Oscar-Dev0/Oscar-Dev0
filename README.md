@@ -68,5 +68,5 @@
 <!-- Discord -->
 <section>
 <h2> <img src="./assets/svg/discord.svg" width="25" height="19" /> Discord<h2>
-<img src= "https://api.zeew.dev/resources/discord/es/full_card/518251720128856084">
+<img src= "https://api.zeew.space/resources/discord/es/full_card/518251720128856084">
 </section>
