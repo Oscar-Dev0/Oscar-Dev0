@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="110" viewBox="0 0 960 110" role="img" aria-labelledby="title desc">
+  <title id="title">Pura vida</title><desc id="desc">Hecho con curiosidad y café desde Costa Rica, con ondas animadas.</desc>
+  <style>.wave{animation:drift 10s ease-in-out infinite alternate}@keyframes drift{to{transform:translateX(-90px)}}@media(prefers-reduced-motion:reduce){.wave{animation:none}}</style>
+  <defs><clipPath id="clip"><rect width="960" height="110" rx="16"/></clipPath></defs>
+  <g clip-path="url(#clip)">
+    <rect width="960" height="110" fill="#101827"/>
+    <g class="wave" fill="none" stroke-width="1.5"><path d="M0 85Q120 45 240 85T480 85T720 85T960 85T1200 85" stroke="#5eead4" opacity=".35"/><path d="M-90 98Q30 58 150 98T390 98T630 98T870 98T1110 98" stroke="#a78bfa" opacity=".3"/></g>
+    <text x="480" y="44" text-anchor="middle" font-family="Consolas,monospace" font-size="15" fill="#cbd5e1">Hecho con curiosidad y café desde Costa Rica.</text>
+    <text x="480" y="72" text-anchor="middle" font-family="Consolas,monospace" font-size="12" letter-spacing="4" fill="#5eead4">PURA VIDA.</text>
+  </g>
+</svg>

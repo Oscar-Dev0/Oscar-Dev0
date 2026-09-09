@@ -1,0 +1,52 @@
+name: Actualizar perfil y avatar de Discord
+
+on:
+  schedule:
+    # 06:23 UTC = 00:23 en Costa Rica.
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - README.md
+      - scripts/**
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-age-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update-age:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Comprobar actualizadores
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Actualizar README
+        run: python scripts/update_age.py
+      - name: Consultar avatar si han pasado diez días
+        id: discord
+        continue-on-error: true
+        run: python scripts/update_discord.py
+      - name: Guardar cambios del perfil
+        run: |
+          git add README.md assets/svg/discord-profile.svg assets/discord-avatar.json
+          if git diff --cached --quiet; then
+            echo "El perfil ya está al día."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "docs: actualizar perfil y avatar de Discord"
+          git push
+      - name: Señalar fallo de la API conservando el último avatar
+        if: steps.discord.outcome == 'failure'
+        run: |
+          echo "No se pudo actualizar el avatar. Se reintentará en la próxima ejecución."
+          exit 1
