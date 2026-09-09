@@ -80,11 +80,11 @@ También podés revisar [bot-plantilla](https://github.com/Oscar-Dev0/bot-planti
 
 <p align="center">
   <a href="https://discord.com/users/518251720128856084">
-    <img src="assets/svg/discord-profile.svg" width="640" alt="OscarDev en Discord, usuario oscar_dev. Abrir mi perfil." />
+    <img src="assets/svg/discord-profile.svg" width="640" alt="Mi perfil de Discord: avatar, nombre y banner actualizados. Abrir perfil." />
   </a>
 </p>
 
-<p align="center"><strong>OscarDev</strong> · <code>oscar_dev</code><br /><sub>Avatar actualizado cada 10 días · Tarjeta personalizada sin estado de conexión en tiempo real.</sub></p>
+<p align="center"><a href="https://discord.com/users/518251720128856084">Conectemos en Discord</a><br /><sub>Avatar, nombre, usuario y banner actualizados cada 10 días · Sin estado de conexión en tiempo real.</sub></p>
 
 ¿Estás construyendo un bot, probando alguno de mis proyectos o querés compartir una idea? Podés encontrarme en [Discord](https://discord.com/users/518251720128856084). Para reportar un problema de código, abrí un issue en el repositorio correspondiente con los pasos para reproducirlo.
 

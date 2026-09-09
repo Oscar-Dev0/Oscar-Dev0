@@ -38,6 +38,26 @@ La bandera `costa-rica.svg` usa las proporciones 1:1:2:1:1 de las cinco franjas.
 
 ## Avatar de Discord cada 10 días
 
+La sincronización también actualiza `global_name`, `username` y el título accesible
+del SVG. Si no hay nombre visible, usa el usuario. Los nombres se escapan como XML
+y el tamaño de letra se ajusta para nombres largos. El enlace usa el ID estable,
+por lo que no se rompe al cambiar de usuario.
+
+Cuando `user.banner` contiene un hash, descarga su PNG del CDN oficial y lo coloca
+en la cabecera con una capa oscura para mantener el texto legible. Si se elimina
+el banner, vuelve al fondo decorativo; `accent_color`, incluido el valor negro 0,
+se utiliza como tinte cuando está disponible. Avatar y banner se guardan como PNG
+estáticos aunque Discord ofrezca versiones animadas. Las animaciones del SVG se
+mantienen. No se infieren Nitro, presencia ni insignias a partir de campos ajenos.
+
+Para actualizar inmediatamente sin esperar el intervalo:
+
+```sh
+python scripts/update_discord.py --force
+```
+
+La ruta del banner sigue la [referencia oficial del CDN de Discord](https://docs.discord.com/developers/reference#image-formatting).
+
 `scripts/update_discord.py` consulta la [API indicada por Oscar](https://www.vibebot.gg/api/tools/avatar-lookup?id=518251720128856084)
 y descarga el PNG de 256 píxeles del CDN de Discord. La imagen queda incrustada
 en el SVG como datos base64 para que la tarjeta no necesite cargar imágenes
