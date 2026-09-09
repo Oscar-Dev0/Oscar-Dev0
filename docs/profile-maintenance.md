@@ -83,3 +83,9 @@ Negro (#020409), superficies oscuras (#05090f), azul eléctrico (#2563eb) y azul
 claro (#38a3ff), con texto blanco y azul pálido. La bandera conserva sus colores
 nacionales y las imágenes de Discord sus colores originales. El actualizador
 mantiene esta paleta al regenerar la tarjeta.
+
+## Decoración del avatar
+
+La decoración roja de enojo y exclamación procede del [APNG compartido por Oscar](https://img.avatardecoration.com/decorations/angry.png). El original se conserva en `assets/discord-angry.png` (80 fotogramas) y está incrustado sin modificar en el SVG. Reemplaza el aro giratorio anterior, sobre un fondo azul y negro.
+
+Está fuera del bloque AVATAR, por lo que permanece al actualizar la foto, el nombre o el banner. La reproducción depende del soporte APNG del visor. Con `prefers-reduced-motion`, se oculta la decoración animada y se conserva la foto.
