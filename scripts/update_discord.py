@@ -91,20 +91,18 @@ def render_profile(card: str, payload: dict, banner: bytes | None) -> str:
         size = min(size, 550 / max(len(text), 1) / .65)
         return (f'<text x="30" y="{y}" fill="{color}" font-size="{size:.1f}" '
                 f'font-weight="{"bold" if bold else "normal"}">{escape(text)}</text>')
-    card = replace_block(card, 'NAME', label(name, 222, 34, '#f5f3ff', True))
-    card = replace_block(card, 'USERNAME', label(handle, 250, 17, '#c4b5fd'))
+    card = replace_block(card, 'NAME', label(name, 222, 34, '#eff6ff', True))
+    card = replace_block(card, 'USERNAME', label(handle, 250, 17, '#93c5fd'))
     card = replace_block(card, 'PROFILE_TITLE', escape(f'{name} en Discord · {handle}'))
-    backdrop = ''
-    accent = user.get('accent_color')
-    if isinstance(accent, int) and not isinstance(accent, bool) and 0 <= accent <= 0xFFFFFF:
-        backdrop = f'<rect width="640" height="145" fill="#{accent:06x}" opacity=".45"/>'
+    # La identidad azul/negro elegida por Oscar prevalece sobre accent_color.
+    backdrop = '<rect width="640" height="145" fill="#071120" opacity=".45"/>'
     if banner is not None:
         if not banner.startswith(b'\x89PNG\r\n\x1a\n'):
             raise ValueError('El banner no es PNG')
         encoded = base64.b64encode(banner).decode('ascii')
         backdrop = (f'<image width="640" height="145" preserveAspectRatio="xMidYMid slice" '
                     f'href="data:image/png;base64,{encoded}"/>'
-                    '<rect width="640" height="145" fill="#100d27" opacity=".3"/>')
+                    '<rect width="640" height="145" fill="#03060b" opacity=".3"/>')
     return replace_block(card, 'BANNER', backdrop)
 
 

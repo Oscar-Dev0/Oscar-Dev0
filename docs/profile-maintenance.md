@@ -45,8 +45,8 @@ por lo que no se rompe al cambiar de usuario.
 
 Cuando `user.banner` contiene un hash, descarga su PNG del CDN oficial y lo coloca
 en la cabecera con una capa oscura para mantener el texto legible. Si se elimina
-el banner, vuelve al fondo decorativo; `accent_color`, incluido el valor negro 0,
-se utiliza como tinte cuando está disponible. Avatar y banner se guardan como PNG
+el banner, vuelve al fondo decorativo azul y negro. La paleta elegida por Oscar
+prevalece sobre `accent_color` de Discord. Avatar y banner se guardan como PNG
 estáticos aunque Discord ofrezca versiones animadas. Las animaciones del SVG se
 mantienen. No se infieren Nitro, presencia ni insignias a partir de campos ajenos.
 
@@ -76,3 +76,10 @@ La programación comienza cuando los archivos están en la rama predeterminada d
 GitHub con Actions habilitado; no hay un proceso local ejecutándose en segundo plano.
 
 Referencia: [programación de workflows en GitHub](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+
+## Colores del perfil
+
+Negro (#020409), superficies oscuras (#05090f), azul eléctrico (#2563eb) y azul
+claro (#38a3ff), con texto blanco y azul pálido. La bandera conserva sus colores
+nacionales y las imágenes de Discord sus colores originales. El actualizador
+mantiene esta paleta al regenerar la tarjeta.

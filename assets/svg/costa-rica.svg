@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="180" viewBox="0 0 480 180" role="img" aria-labelledby="title desc">
  <title id="title">Costa Rica · Pura vida</title><desc id="desc">Bandera de Costa Rica con franjas azul, blanco, rojo, blanco y azul, con brillo animado.</desc>
  <defs>
-  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#14223a"/><stop offset="1" stop-color="#0c1220"/></linearGradient>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071120"/><stop offset="1" stop-color="#020409"/></linearGradient>
   <linearGradient id="silk"><stop stop-color="#fff" stop-opacity=".02"/><stop offset=".45" stop-color="#fff" stop-opacity=".25"/><stop offset=".7" stop-color="#000" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity=".05"/></linearGradient>
   <clipPath id="flag"><rect x="28" y="39" width="150" height="100" rx="9"/></clipPath>
  </defs>
  <style>.silk{animation:silk 5s ease-in-out infinite alternate}@keyframes silk{to{opacity:.35}}@media(prefers-reduced-motion:reduce){.silk{animation:none}}</style>
- <rect x="1" y="1" width="478" height="178" rx="18" fill="url(#bg)" stroke="#30425d"/>
+ <rect x="1" y="1" width="478" height="178" rx="18" fill="url(#bg)" stroke="#173353"/>
  <g clip-path="url(#flag)"><path fill="#002b7f" d="M28 39h150v100H28z"/><path fill="#fff" d="M28 55.667h150v66.666H28z"/><path fill="#ce1126" d="M28 72.333h150v33.334H28z"/><rect class="silk" x="28" y="39" width="150" height="100" fill="url(#silk)"/></g>
- <g font-family="Consolas,monospace"><text x="204" y="57" fill="#5eead4" font-size="11" letter-spacing="3">HECHO EN</text><text x="202" y="91" fill="#f1f5f9" font-size="29" font-weight="bold">Costa Rica</text><text x="204" y="120" fill="#afbed3" font-size="14">Pura vida, puro código.</text><text x="204" y="148" fill="#a78bfa" font-size="11">CENTROAMÉRICA / UTC−6</text></g>
+ <g font-family="Consolas,monospace"><text x="204" y="57" fill="#38a3ff" font-size="11" letter-spacing="3">HECHO EN</text><text x="202" y="91" fill="#f1f5f9" font-size="29" font-weight="bold">Costa Rica</text><text x="204" y="120" fill="#afbed3" font-size="14">Pura vida, puro código.</text><text x="204" y="148" fill="#2563eb" font-size="11">CENTROAMÉRICA / UTC−6</text></g>
 </svg>

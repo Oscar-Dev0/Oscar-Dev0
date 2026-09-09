@@ -21,7 +21,7 @@ class DiscordTests(unittest.TestCase):
         payload['user']['global_name'] = None
         result = render_profile(result, payload, None)
         self.assertNotIn('data:image/png', result)
-        self.assertIn('#000000', result)
+        self.assertIn('#071120', result)
         self.assertIn('new_user', result)
         import xml.etree.ElementTree as ET
         ET.fromstring(result)

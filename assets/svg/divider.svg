@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="28" viewBox="0 0 960 28" role="img" aria-label="Separador decorativo">
- <defs><linearGradient id="line"><stop stop-color="#5eead4" stop-opacity="0"/><stop offset=".4" stop-color="#5eead4"/><stop offset=".6" stop-color="#a78bfa"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient></defs>
+ <defs><linearGradient id="line"><stop stop-color="#38a3ff" stop-opacity="0"/><stop offset=".4" stop-color="#38a3ff"/><stop offset=".6" stop-color="#2563eb"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></linearGradient></defs>
  <style>.spark{animation:spark 4s ease-in-out infinite alternate}@keyframes spark{to{opacity:.35}}@media(prefers-reduced-motion:reduce){.spark{animation:none}}</style>
  <path d="M0 14H447M513 14H960" stroke="url(#line)"/>
- <g class="spark" fill="none" stroke="#a78bfa"><path d="m466 9-6 5 6 5m28-10 6 5-6 5m-10-14-8 18"/></g>
+ <g class="spark" fill="none" stroke="#2563eb"><path d="m466 9-6 5 6 5m28-10 6 5-6 5m-10-14-8 18"/></g>
 </svg>

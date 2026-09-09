@@ -58,12 +58,12 @@ También podés revisar [bot-plantilla](https://github.com/Oscar-Dev0/bot-planti
 ## Mi caja de herramientas
 
 <p>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=161b22" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Lua-2C2D72?style=flat-square&amp;logo=lua&amp;logoColor=white" alt="Lua" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square" alt="C#" />
+  <img src="https://img.shields.io/badge/TypeScript-071120?style=for-the-badge&amp;logo=typescript&amp;logoColor=60A5FA" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-071120?style=for-the-badge&amp;logo=javascript&amp;logoColor=60A5FA" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Lua-071120?style=for-the-badge&amp;logo=lua&amp;logoColor=60A5FA" alt="Lua" />
+  <img src="https://img.shields.io/badge/Python-071120?style=for-the-badge&amp;logo=python&amp;logoColor=60A5FA" alt="Python" />
+  <img src="https://img.shields.io/badge/Go-071120?style=for-the-badge&amp;logo=go&amp;logoColor=60A5FA" alt="Go" />
+  <img src="https://img.shields.io/badge/C%23-071120?style=for-the-badge" alt="C#" />
 </p>
 
 - **Bots y comunidad:** Discord, discord.js, Seyfert y Canvas.
