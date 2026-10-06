@@ -6,7 +6,9 @@
 <linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
 <radialGradient id="halo"><stop stop-color="#2563eb" stop-opacity=".32"/><stop offset=".5" stop-color="#1061d6" stop-opacity=".12"/><stop offset="1" stop-color="#1061d6" stop-opacity="0"/></radialGradient>
 <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#588ac3" stroke-opacity=".075"/></pattern>
-</defs>
+<linearGradient id="core-face" x2=".8" y2="1"><stop stop-color="#143b68"/><stop offset=".45" stop-color="#0a213e"/><stop offset="1" stop-color="#050c19"/></linearGradient>
+<linearGradient id="core-rim" x2="1" y2="1"><stop stop-color="#b4e2ff"/><stop offset=".4" stop-color="#458fda"/><stop offset="1" stop-color="#143c73"/></linearGradient>
+<filter id="core-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter></defs>
 <style>text{font-family:Segoe UI,Inter,Arial,sans-serif}.mono{font-family:Cascadia Code,Consolas,monospace}
 .orbit{animation:orbit 32s linear infinite;transform-origin:760px 205px}
 .counter{animation:orbit 48s linear infinite reverse;transform-origin:760px 205px}
@@ -40,8 +42,11 @@
 <g class="orbit" fill="none"><circle cx="760" cy="205" r="128" stroke="#38a3ff" stroke-width="2" stroke-dasharray="164 35 12 593"/><circle cx="760" cy="77" r="5" fill="#b8e8ff" stroke="#38a3ff"/><circle cx="760" cy="77" r="10" fill="#38a3ff" opacity=".18"/></g>
 <g class="counter" fill="none"><circle cx="760" cy="205" r="110" stroke="#3865bc" stroke-dasharray="2 9"/><path d="M650 205a110 110 0 0 1 110-110" stroke="#89c7ff" stroke-width="2"/></g>
 <path d="M603 205h46M871 205h46M760 48v30M760 334v28" stroke="#27466a"/>
-<g class="float"><path d="m760 124 70 40v82l-70 40-70-40v-82Z" fill="#071327" stroke="#286bb0"/>
-<path d="m760 139 57 33v66l-57 33-57-33v-66Z" fill="#081b35" stroke="#38a3ff" stroke-opacity=".4"/>
+<g class="float"><path d="m760 124 70 40v82l-70 40-70-40v-82Z" fill="none" stroke="#38a3ff" stroke-width="10" stroke-opacity=".16" filter="url(#core-glow)"/>
+<path d="m760 124 70 40v82l-70 40-70-40v-82Z" fill="#071327" stroke="url(#core-rim)" stroke-width="1.5"/>
+<path d="m760 139 57 33v66l-57 33-57-33v-66Z" fill="url(#core-face)" stroke="#38a3ff" stroke-opacity=".4"/>
+<path d="m704 172 56-32 56 32-56 28Z" fill="#65baff" opacity=".045"/>
+<path d="m732 187-17 18 17 18m56-36 17 18-17 18m-22-44-13 48" fill="none" stroke="#38a3ff" stroke-width="11" stroke-opacity=".24" filter="url(#core-glow)"/>
 <path d="m732 187-17 18 17 18m56-36 17 18-17 18m-22-44-13 48" fill="none" stroke="#bcE6ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="m760 124 70 40-13 8m-127 74 13-8 57 33v15" fill="none" stroke="#70baff" stroke-width="2"/></g>
 <text x="760" y="389" font-size="13" fill="#94b9e0" text-anchor="middle">Pura vida. Puro código.</text>

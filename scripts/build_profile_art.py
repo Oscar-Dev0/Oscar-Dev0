@@ -68,6 +68,9 @@ ICONS = {
     'react': '<circle r="5" fill="#82c6ff"/><ellipse rx="31" ry="11"/><ellipse rx="31" ry="11" transform="rotate(60)"/><ellipse rx="31" ry="11" transform="rotate(120)"/>',
     'windows': '<path d="m-25-21 21-3V-2h-21Zm25-4 25-4V-2H0ZM-25 2h21v22l-21-3ZM0 2h25v27L0 25Z"/>',
     'database': '<ellipse cy="-19" rx="25" ry="9"/><path d="M-25-19v38c0 12 50 12 50 0v-38M-25-1c0 12 50 12 50 0M-25 10c0 12 50 12 50 0"/>',
+    'svelte': '<path d="M19-24c-7-6-13-5-22 0l-13 8c-11 7-9 19 1 23l8 3c7 3 10 1 16-3l8-5M-19 24c7 6 13 5 22 0l13-8c11-7 9-19-1-23l-8-3c-7-3-10-1-16 3l-8 5" stroke-width="6" fill="none"/>',
+    'linux': '<path d="M-16-6v-9c0-21 32-21 32 0v9l8 22c4 13-52 13-48 0Z"/><ellipse cy="9" rx="15" ry="19" fill="#c9e5ff" stroke="#82c6ff"/><ellipse cx="-6" cy="-13" rx="4" ry="6" fill="#e4f4ff"/><ellipse cx="6" cy="-13" rx="4" ry="6" fill="#e4f4ff"/><circle cx="-5" cy="-12" r="1.6" fill="#091a30" stroke="none"/><circle cx="5" cy="-12" r="1.6" fill="#091a30" stroke="none"/><path d="m-7-5 7 6 7-6-7-4Z" fill="#38a3ff"/><path d="m-11 20-15 6 2 5 21-2m14-9 15 6-2 5-21-2" fill="#2563eb"/>',
+    'node': '<path d="m0-30 26 15v30L0 30-26 15v-30Z"/><path d="M-9 13v-26L9 13v-26" stroke-width="3" fill="none"/>',
 }
 
 
@@ -76,6 +79,9 @@ def icon(kind, x, y, scale=1):
 
 
 def header():
+    core_defs = '''<linearGradient id="core-face" x2=".8" y2="1"><stop stop-color="#143b68"/><stop offset=".45" stop-color="#0a213e"/><stop offset="1" stop-color="#050c19"/></linearGradient>
+<linearGradient id="core-rim" x2="1" y2="1"><stop stop-color="#b4e2ff"/><stop offset=".4" stop-color="#458fda"/><stop offset="1" stop-color="#143c73"/></linearGradient>
+<filter id="core-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4"/></filter>'''
     ticks = ''.join(f'<path d="M760 49v{10 if angle % 30 == 0 else 4}" transform="rotate({angle} 760 205)"/>' for angle in range(0, 360, 6))
     stars = ''.join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x,y,r in [(615,66,1.5),(871,56,2),(921,179,1),(598,292,2),(890,334,1.5),(652,349,1),(809,29,1),(924,81,1)])
     body = frame(960,420,24) + '''
@@ -97,12 +103,15 @@ def header():
 <g class="orbit" fill="none"><circle cx="760" cy="205" r="128" stroke="#38a3ff" stroke-width="2" stroke-dasharray="164 35 12 593"/><circle cx="760" cy="77" r="5" fill="#b8e8ff" stroke="#38a3ff"/><circle cx="760" cy="77" r="10" fill="#38a3ff" opacity=".18"/></g>
 <g class="counter" fill="none"><circle cx="760" cy="205" r="110" stroke="#3865bc" stroke-dasharray="2 9"/><path d="M650 205a110 110 0 0 1 110-110" stroke="#89c7ff" stroke-width="2"/></g>
 <path d="M603 205h46M871 205h46M760 48v30M760 334v28" stroke="#27466a"/>
-<g class="float"><path d="m760 124 70 40v82l-70 40-70-40v-82Z" fill="#071327" stroke="#286bb0"/>
-<path d="m760 139 57 33v66l-57 33-57-33v-66Z" fill="#081b35" stroke="#38a3ff" stroke-opacity=".4"/>
+<g class="float"><path d="m760 124 70 40v82l-70 40-70-40v-82Z" fill="none" stroke="#38a3ff" stroke-width="10" stroke-opacity=".16" filter="url(#core-glow)"/>
+<path d="m760 124 70 40v82l-70 40-70-40v-82Z" fill="#071327" stroke="url(#core-rim)" stroke-width="1.5"/>
+<path d="m760 139 57 33v66l-57 33-57-33v-66Z" fill="url(#core-face)" stroke="#38a3ff" stroke-opacity=".4"/>
+<path d="m704 172 56-32 56 32-56 28Z" fill="#65baff" opacity=".045"/>
+<path d="m732 187-17 18 17 18m56-36 17 18-17 18m-22-44-13 48" fill="none" stroke="#38a3ff" stroke-width="11" stroke-opacity=".24" filter="url(#core-glow)"/>
 <path d="m732 187-17 18 17 18m56-36 17 18-17 18m-22-44-13 48" fill="none" stroke="#bcE6ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="m760 124 70 40-13 8m-127 74 13-8 57 33v15" fill="none" stroke="#70baff" stroke-width="2"/></g>
 ''' + text(760,389,'Pura vida. Puro código.',13,'#94b9e0','text-anchor="middle"')
-    svg('header.svg',960,420,'Oscar Dev · Del código al servidor', 'Programador de Costa Rica. React, SvelteKit, Linux, Docker, Windows Server, Discord y FiveM. Núcleo orbital y prompt de Linux ilustrado.',body)
+    svg('header.svg',960,420,'Oscar Dev · Del código al servidor', 'Programador de Costa Rica. React, SvelteKit, Linux, Docker, Windows Server, Discord y FiveM. Núcleo orbital y prompt de Linux ilustrado.',body,defs=core_defs)
     body = frame(480,430) + '<ellipse cx="420" cy="60" rx="230" ry="160" fill="url(#halo)"/><rect x="2" y="2" width="476" height="426" rx="20" fill="url(#grid)"/>'
     body += '<g class="mobile-orbit" fill="none" stroke="#38a3ff" stroke-opacity=".35"><circle cx="408" cy="63" r="46" stroke-dasharray="65 15 3 206"/><circle cx="408" cy="17" r="3" fill="#91caff"/></g>'
     body += icon('terminal',408,63,.85) + text(28,49,'Oscar-Dev0',14,'#a9bed8','class="mono"') + text(28,119,'Oscar Dev.',61,'#f4f9ff','font-weight="750" letter-spacing="-3"')
@@ -132,16 +141,17 @@ def workbench():
 
 
 def terminal():
-    css = '.terminal-scan{animation:scan 12s ease-in-out infinite alternate}@keyframes scan{to{transform:translateY(270px)}}'
+    css = '.terminal-scan{animation:scan 16s ease-in-out infinite alternate}@keyframes scan{to{transform:translateY(270px)}}'
     body = frame(960,390) + '<path d="M1 45H959M607 45V389" stroke="#1c3553"/>'
     body += '<g fill="#416da0"><circle cx="25" cy="24" r="4"/><circle cx="41" cy="24" r="4"/><circle cx="57" cy="24" r="4"/></g>' + text(80,29,'oscar@linux: ~/workspace',13,'#a5c8e9','class="mono"')
     body += text(933,29,'bash / stack.yml',12,'#8eb6df','class="mono" text-anchor="end"')
-    body += '<rect x="2" y="46" width="603" height="342" fill="url(#grid)"/><path class="terminal-scan" d="M25 65H580" stroke="#4aaeff" stroke-opacity=".1" stroke-width="12"/>'
+    body += '<rect x="2" y="46" width="603" height="342" fill="url(#grid)"/><rect x="2" y="46" width="39" height="342" fill="#050c18" fill-opacity=".5"/><path class="terminal-scan" d="M44 65H580" stroke="#4aaeff" stroke-opacity=".07" stroke-width="8"/>'
     body += text(26,85,'$ cat stack.yml',18,'#9fd4ff','class="mono"')
     rows = [('developer:','Oscar Dev'),('web:','[SvelteKit, React]'),('runtime:','[Node.js, Bun]'),('containers:','[Docker, Compose]'),('systems:','[Linux, Windows Server]'),('community:','[Discord, FiveM]')]
     for i,(key,value) in enumerate(rows):
         y=126+i*34
-        body += text(26,y,key,17,'#90b2d6','class="mono"') + text(166,y,value,17,'#d4e8ff','class="mono"')
+        body += text(28,y,str(i+1),11,'#567699','class="mono" text-anchor="end"')
+        body += text(50,y,key,17,'#90b2d6','class="mono"') + text(190,y,value,17,'#d4e8ff','class="mono"')
     body += text(26,355,'$',18,'#9fd4ff','class="mono"') + '<rect class="cursor" x="47" y="339" width="10" height="21" fill="#38a3ff"/>'
     for y,kind,title,sub in [(91,'web','Interfaces','SvelteKit / React'),(192,'docker','Contenedores','Docker / Compose'),(293,'windows','Sistemas','Linux / Windows Server')]:
         body += icon(kind,902,y+10,.66) + text(638,y,title,23,'#e4f2ff','font-weight="650"') + text(638,y+31,sub,16)
@@ -157,7 +167,7 @@ def terminal():
 
 
 def platforms():
-    entries=[('react','React'),('web','SvelteKit'),('terminal','Linux'),('docker','Docker'),('windows','Windows Server'),('terminal','Node.js'),('bolt','Bun'),('database','MySQL')]
+    entries=[('react','React'),('svelte','SvelteKit'),('linux','Linux'),('docker','Docker'),('windows','Windows Server'),('node','Node.js'),('bolt','Bun'),('database','MySQL')]
     body=frame(960,300) + text(28,43,'Del navegador al servidor',24,'#e8f3ff','font-weight="650"')
     for i,(kind,label) in enumerate(entries):
         x,y=28+(i%4)*234,64+(i//4)*112

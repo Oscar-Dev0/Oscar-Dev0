@@ -41,6 +41,11 @@ expone las tecnologías de Oscar con un cursor y un barrido de luz decorativo.
 No ejecuta comandos ni representa una sesión real. Las secciones usan el mismo
 vocabulario visual: iconos de línea, circuitos y superficies negras y azules.
 El movimiento se concentra en elementos decorativos; todo el texto permanece fijo.
+El núcleo usa un borde iluminado y reflejos suaves para dar profundidad. La terminal
+numera las líneas de su configuración y mantiene el barrido de luz fuera del margen
+de números. Las plataformas tienen iconos propios: un pingüino para Linux, una
+marca S estilizada para SvelteKit y un hexágono con N para Node.js. Son ilustraciones
+vectoriales del perfil, sin imágenes externas.
 
 La paleta base es negro `#020409`, azul noche `#081629`, borde `#1c3553`, azul
 eléctrico `#2563eb`, luz `#38a3ff` y blanco `#f4f9ff`. La tipografía usa Segoe UI
