@@ -1,11 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="110" viewBox="0 0 960 110" role="img" aria-labelledby="title desc">
-  <title id="title">Pura vida</title><desc id="desc">Hecho con curiosidad y café desde Costa Rica, con ondas animadas.</desc>
-  <style>.wave{animation:drift 10s ease-in-out infinite alternate}@keyframes drift{to{transform:translateX(-90px)}}@media(prefers-reduced-motion:reduce){.wave{animation:none}}</style>
-  <defs><clipPath id="clip"><rect width="960" height="110" rx="16"/></clipPath></defs>
-  <g clip-path="url(#clip)">
-    <rect width="960" height="110" fill="#05090f"/>
-    <g class="wave" fill="none" stroke-width="1.5"><path d="M0 85Q120 45 240 85T480 85T720 85T960 85T1200 85" stroke="#38a3ff" opacity=".35"/><path d="M-90 98Q30 58 150 98T390 98T630 98T870 98T1110 98" stroke="#2563eb" opacity=".3"/></g>
-    <text x="480" y="44" text-anchor="middle" font-family="Consolas,monospace" font-size="15" fill="#cbd5e1">Hecho con curiosidad y café desde Costa Rica.</text>
-    <text x="480" y="72" text-anchor="middle" font-family="Consolas,monospace" font-size="12" letter-spacing="4" fill="#38a3ff">PURA VIDA.</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="156" viewBox="0 0 960 156" role="img" aria-labelledby="title desc">
+<title id="title">Pura vida · Sigamos construyendo</title>
+<desc id="desc">La próxima idea empieza con una conversación. Hecho con curiosidad y café desde Costa Rica.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081629"/><stop offset=".55" stop-color="#040a14"/><stop offset="1" stop-color="#020409"/></linearGradient>
+<linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#2563eb" stop-opacity=".32"/><stop offset=".5" stop-color="#1061d6" stop-opacity=".12"/><stop offset="1" stop-color="#1061d6" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#588ac3" stroke-opacity=".075"/></pattern>
+</defs>
+<style>text{font-family:Segoe UI,Inter,Arial,sans-serif}.mono{font-family:Cascadia Code,Consolas,monospace}
+.orbit{animation:orbit 32s linear infinite;transform-origin:760px 205px}
+.counter{animation:orbit 48s linear infinite reverse;transform-origin:760px 205px}
+.signal{stroke-dasharray:8 140;animation:signal 7s linear infinite}
+.breathe{animation:breathe 6s ease-in-out infinite alternate}
+.cursor{animation:blink 1.4s steps(2,end) infinite}
+.float{animation:float 8s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes signal{to{stroke-dashoffset:-296}}
+@keyframes breathe{to{opacity:.45}}
+@keyframes blink{50%{opacity:0}}
+@keyframes float{to{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.avatar-decoration{display:none}}
+</style>
+<rect x="1" y="1" width="958" height="154" rx="20" fill="url(#bg)" stroke="#1c3553"/><g fill="none" stroke="#2563eb" opacity=".2"><path d="M0 146Q240 66 480 146T960 146"/><path d="M0 160Q240 80 480 160T960 160"/><path d="M0 174Q240 94 480 174T960 174"/></g><path class="signal" d="M0 146Q240 66 480 146T960 146" fill="none" stroke="#65baff" stroke-opacity=".65"/><text x="480" y="64" font-size="25" fill="#e5f2ff" text-anchor="middle" font-weight="600">La próxima idea empieza con una conversación.</text><text x="480" y="99" font-size="15" fill="#a5c9ee" text-anchor="middle">Hecho con curiosidad y café desde Costa Rica. Pura vida.</text>
 </svg>

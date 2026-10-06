@@ -22,13 +22,57 @@ python scripts/update_discord.py
 En Windows, si falta la base de zonas horarias, se usa UTC-6 como alternativa
 (Costa Rica no aplica horario de verano). No requiere paquetes externos.
 
-Los proyectos se seleccionaron desde la API pública de GitHub y sus README el
-9 de septiembre de 2026. La selección se edita manualmente en la tabla del perfil.
-Se respetan los créditos de os_multijob como ediciones y mantenimiento.
+La selección se amplió el 6 de octubre de 2026 tras consultar la API pública de
+GitHub, los README y los manifiestos de los repositorios. La selección se edita
+manualmente en la tabla del perfil. Las fuentes están en `docs/project-review.md`.
+Se respetan los créditos de os_multijob como ediciones y mantenimiento, y se
+describen las aportaciones a discord_cards sin atribuir autoría exclusiva.
 
 Los SVG del rediseño son locales, con animaciones CSS, sin JavaScript ni fuentes
 externas. Respetan `prefers-reduced-motion` y conservan una vista estática legible.
-Solo los badges de tecnologías dependen de Shields.io.
+Los lenguajes, las tarjetas y los enlaces también usan SVG locales: la presentación
+del README no necesita Shields.io ni otros servicios de imágenes.
+
+## Arte orbital y versiones para móvil
+
+El encabezado combina un núcleo hexagonal de código, anillos en contrarrotación,
+marcas de un astrolabio y un prompt ilustrado de Linux. La terminal `stack.yml`
+expone las tecnologías de Oscar con un cursor y un barrido de luz decorativo.
+No ejecuta comandos ni representa una sesión real. Las secciones usan el mismo
+vocabulario visual: iconos de línea, circuitos y superficies negras y azules.
+El movimiento se concentra en elementos decorativos; todo el texto permanece fijo.
+
+La paleta base es negro `#020409`, azul noche `#081629`, borde `#1c3553`, azul
+eléctrico `#2563eb`, luz `#38a3ff` y blanco `#f4f9ff`. La tipografía usa Segoe UI
+para títulos y Consolas/Cascadia Code para fragmentos de código, con alternativas
+del sistema. No hay descargas de fuentes.
+
+Los elementos `<picture>` seleccionan versiones compactas hasta 600 px: encabezado,
+enlaces, proyectos, terminal, plataformas, áreas, lenguajes, proceso y cierre. Los ocho proyectos
+se presentan en una tabla HTML de dos columnas con enlaces y descripciones nativas
+debajo de las ilustraciones. Así siguen siendo legibles aunque una imagen no cargue.
+Las otras tablas usan Markdown, y los repositorios adicionales están en `<details>`.
+El README usa elementos compatibles con GitHub, sin CSS de página ni scripts.
+El stack incluye React, SvelteKit, Linux, Docker, Compose y Windows Server junto
+a los lenguajes y herramientas anteriores. SvelteKit y Windows Server se incorporan
+por la experiencia declarada por Oscar; las tablas de repositorios solo atribuyen
+tecnologías comprobadas en sus archivos públicos. No se inventan niveles,
+certificaciones, porcentajes de dominio ni servicios desplegados.
+
+Para reconstruir los SVG después de cambiar colores, textos o geometría:
+
+```sh
+python scripts/build_profile_art.py
+```
+
+El generador valida el XML antes de escribir cada archivo y conserva los bloques
+`PROFILE_TITLE`, `AVATAR`, `BANNER`, `NAME` y `USERNAME` del perfil de Discord,
+además del APNG original. La sincronización cada diez días sigue editando esos
+mismos bloques. Las posiciones del avatar y del nombre se mantienen compatibles
+con `scripts/update_discord.py`. Para cambios permanentes en el arte, editá el
+generador; una edición manual fuera de los bloques se reemplaza al reconstruir.
+El generador no modifica `README.md`, `discord.svg` ni el archivo histórico
+`snake.svg`, que no se muestra en el perfil.
 
 La tarjeta `discord-profile.svg` está inspirada en la captura del perfil facilitada
 por Oscar: nombre `OscarDev` y usuario `oscar_dev`. Integra su avatar público
@@ -61,7 +105,7 @@ La ruta del banner sigue la [referencia oficial del CDN de Discord](https://docs
 `scripts/update_discord.py` consulta la [API indicada por Oscar](https://www.vibebot.gg/api/tools/avatar-lookup?id=518251720128856084)
 y descarga el PNG de 256 píxeles del CDN de Discord. La imagen queda incrustada
 en el SVG como datos base64 para que la tarjeta no necesite cargar imágenes
-externas al mostrarse. Se conserva el aro animado; el avatar es una captura PNG
+externas al mostrarse. Se conserva la decoración APNG original; el avatar es una captura PNG
 estática aunque el avatar de Discord sea animado.
 
 `assets/discord-avatar.json` registra la fecha local de la última consulta exitosa.
@@ -79,7 +123,7 @@ Referencia: [programación de workflows en GitHub](https://docs.github.com/en/ac
 
 ## Colores del perfil
 
-Negro (#020409), superficies oscuras (#05090f), azul eléctrico (#2563eb) y azul
+Negro (#020409), azul noche (#081629), azul eléctrico (#2563eb) y azul
 claro (#38a3ff), con texto blanco y azul pálido. La bandera conserva sus colores
 nacionales y las imágenes de Discord sus colores originales. El actualizador
 mantiene esta paleta al regenerar la tarjeta.

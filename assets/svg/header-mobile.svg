@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="430" viewBox="0 0 480 430" role="img" aria-labelledby="title desc">
+<title id="title">Oscar Dev · Del código al servidor</title>
+<desc id="desc">Programador desde Costa Rica. React, SvelteKit, Linux, Docker y Windows Server.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081629"/><stop offset=".55" stop-color="#040a14"/><stop offset="1" stop-color="#020409"/></linearGradient>
+<linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#2563eb" stop-opacity=".32"/><stop offset=".5" stop-color="#1061d6" stop-opacity=".12"/><stop offset="1" stop-color="#1061d6" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#588ac3" stroke-opacity=".075"/></pattern>
+</defs>
+<style>text{font-family:Segoe UI,Inter,Arial,sans-serif}.mono{font-family:Cascadia Code,Consolas,monospace}
+.orbit{animation:orbit 32s linear infinite;transform-origin:760px 205px}
+.counter{animation:orbit 48s linear infinite reverse;transform-origin:760px 205px}
+.signal{stroke-dasharray:8 140;animation:signal 7s linear infinite}
+.breathe{animation:breathe 6s ease-in-out infinite alternate}
+.cursor{animation:blink 1.4s steps(2,end) infinite}
+.float{animation:float 8s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes signal{to{stroke-dashoffset:-296}}
+@keyframes breathe{to{opacity:.45}}
+@keyframes blink{50%{opacity:0}}
+@keyframes float{to{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.avatar-decoration{display:none}}
+.mobile-orbit{animation:orbit 32s linear infinite;transform-origin:408px 63px}</style>
+<rect x="1" y="1" width="478" height="428" rx="20" fill="url(#bg)" stroke="#1c3553"/><ellipse cx="420" cy="60" rx="230" ry="160" fill="url(#halo)"/><rect x="2" y="2" width="476" height="426" rx="20" fill="url(#grid)"/><g class="mobile-orbit" fill="none" stroke="#38a3ff" stroke-opacity=".35"><circle cx="408" cy="63" r="46" stroke-dasharray="65 15 3 206"/><circle cx="408" cy="17" r="3" fill="#91caff"/></g><g transform="translate(408 63) scale(0.85)" fill="#091a30" stroke="#82c6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="-27" y="-21" width="54" height="42" rx="6"/><path d="m-15-6 9 8-9 8M1 11h14M-27-11h54"/></g><text x="28" y="49" font-size="14" fill="#a9bed8" class="mono">Oscar-Dev0</text><text x="28" y="119" font-size="61" fill="#f4f9ff" font-weight="750" letter-spacing="-3">Oscar Dev.</text><text x="30" y="164" font-size="29" fill="#dcecff" font-weight="500">Del código al servidor.</text><text x="30" y="208" font-size="18" fill="#a9bed8" >Web, bots, herramientas e infraestructura.</text><text x="30" y="240" font-size="18" fill="#a9bed8" >Desde Costa Rica. Pura vida.</text><path d="M30 274H450" stroke="#23466c"/><g fill="#0c213a" stroke="#274d76"><rect x="30" y="298" width="128" height="34" rx="17"/><rect x="170" y="298" width="128" height="34" rx="17"/><rect x="310" y="298" width="140" height="34" rx="17"/></g><text x="94" y="320" font-size="16" fill="#cde6ff" text-anchor="middle">React</text><text x="234" y="320" font-size="16" fill="#cde6ff" text-anchor="middle">SvelteKit</text><text x="380" y="320" font-size="16" fill="#cde6ff" text-anchor="middle">Linux / Docker</text><text x="30" y="385" font-size="17" fill="#9ecbff" class="mono">oscar@linux:~/projects $</text><rect class="cursor" x="277" y="369" width="8" height="20" fill="#38a3ff"/>
+</svg>

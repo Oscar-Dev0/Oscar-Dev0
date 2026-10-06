@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="332" viewBox="0 0 480 332" role="img" aria-labelledby="title desc">
+<title id="title">Mi caja de herramientas</title>
+<desc id="desc">TypeScript, JavaScript, Lua, Python, Go y C#.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081629"/><stop offset=".55" stop-color="#040a14"/><stop offset="1" stop-color="#020409"/></linearGradient>
+<linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#2563eb" stop-opacity=".32"/><stop offset=".5" stop-color="#1061d6" stop-opacity=".12"/><stop offset="1" stop-color="#1061d6" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#588ac3" stroke-opacity=".075"/></pattern>
+</defs>
+<style>text{font-family:Segoe UI,Inter,Arial,sans-serif}.mono{font-family:Cascadia Code,Consolas,monospace}
+.orbit{animation:orbit 32s linear infinite;transform-origin:760px 205px}
+.counter{animation:orbit 48s linear infinite reverse;transform-origin:760px 205px}
+.signal{stroke-dasharray:8 140;animation:signal 7s linear infinite}
+.breathe{animation:breathe 6s ease-in-out infinite alternate}
+.cursor{animation:blink 1.4s steps(2,end) infinite}
+.float{animation:float 8s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes signal{to{stroke-dashoffset:-296}}
+@keyframes breathe{to{opacity:.45}}
+@keyframes blink{50%{opacity:0}}
+@keyframes float{to{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.avatar-decoration{display:none}}
+</style>
+<rect x="1" y="1" width="478" height="330" rx="20" fill="url(#bg)" stroke="#1c3553"/><text x="26" y="47" font-size="25" fill="#e8f3ff" font-weight="650">Lenguajes con los que construyo</text><rect x="26" y="73" width="136" height="110" rx="12" fill="#09182a" stroke="#223f60"/><text x="94" y="120" font-size="32" fill="#91caff" font-weight="700" text-anchor="middle" class="mono">TS</text><text x="94" y="157" font-size="19" fill="#d5e7fa" text-anchor="middle">TypeScript</text><rect x="172" y="73" width="136" height="110" rx="12" fill="#09182a" stroke="#223f60"/><text x="240" y="120" font-size="32" fill="#91caff" font-weight="700" text-anchor="middle" class="mono">JS</text><text x="240" y="157" font-size="19" fill="#d5e7fa" text-anchor="middle">JavaScript</text><rect x="318" y="73" width="136" height="110" rx="12" fill="#09182a" stroke="#223f60"/><text x="386" y="120" font-size="32" fill="#91caff" font-weight="700" text-anchor="middle" class="mono">Lua</text><text x="386" y="157" font-size="19" fill="#d5e7fa" text-anchor="middle">Lua</text><rect x="26" y="197" width="136" height="110" rx="12" fill="#09182a" stroke="#223f60"/><text x="94" y="244" font-size="32" fill="#91caff" font-weight="700" text-anchor="middle" class="mono">Py</text><text x="94" y="281" font-size="19" fill="#d5e7fa" text-anchor="middle">Python</text><rect x="172" y="197" width="136" height="110" rx="12" fill="#09182a" stroke="#223f60"/><text x="240" y="244" font-size="32" fill="#91caff" font-weight="700" text-anchor="middle" class="mono">Go</text><text x="240" y="281" font-size="19" fill="#d5e7fa" text-anchor="middle">Go</text><rect x="318" y="197" width="136" height="110" rx="12" fill="#09182a" stroke="#223f60"/><text x="386" y="244" font-size="32" fill="#91caff" font-weight="700" text-anchor="middle" class="mono">C#</text><text x="386" y="281" font-size="19" fill="#d5e7fa" text-anchor="middle">C#</text>
+</svg>

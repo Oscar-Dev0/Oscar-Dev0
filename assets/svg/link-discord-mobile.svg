@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="48" viewBox="0 0 960 48" role="img" aria-labelledby="title desc">
-<title id="title">Separador</title>
-<desc id="desc">Línea de circuito decorativa.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="72" viewBox="0 0 240 72" role="img" aria-labelledby="title desc">
+<title id="title">Conectemos en Discord</title>
+<desc id="desc">Bots, código y buenas ideas</desc>
 <defs>
 <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081629"/><stop offset=".55" stop-color="#040a14"/><stop offset="1" stop-color="#020409"/></linearGradient>
 <linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
@@ -21,5 +21,5 @@
 @keyframes float{to{transform:translateY(-7px)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}.avatar-decoration{display:none}}
 </style>
-<path d="M0 24H419m122 0h419" stroke="url(#blue)" stroke-opacity=".25"/><path class="signal" d="M0 24H419m122 0h419" stroke="#38a3ff"/><path d="m460 16-9 8 9 8m40-16 9 8-9 8m-15-21-10 26" fill="none" stroke="#81c7ff" stroke-width="1.5"/><circle cx="428" cy="24" r="2" fill="#38a3ff"/><circle cx="532" cy="24" r="2" fill="#38a3ff"/>
+<rect x="1" y="1" width="238" height="70" rx="12" fill="url(#bg)" stroke="#1c3553"/><g transform="translate(30 36) scale(0.42)" fill="#091a30" stroke="#82c6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="-24" y="-17" width="48" height="36" rx="10"/><path d="M0-17v-9M-24-2h-6v12h6M24-2h6v12h-6M-8 11H8"/><circle cx="0" cy="-29" r="3"/><circle cx="-10" cy="-1" r="3"/><circle cx="10" cy="-1" r="3"/></g><text x="58" y="44" font-size="24" fill="#dceeff" font-weight="650">Discord ↗</text>
 </svg>

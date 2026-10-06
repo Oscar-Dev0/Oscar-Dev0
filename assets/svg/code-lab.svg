@@ -1,18 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
- <title id="title">De la idea al proyecto</title><desc id="desc">Terminal ilustrada con las áreas de Oscar: comunidad, herramientas y servidores. Pensar, construir, compartir.</desc>
- <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#05090f"/><stop offset="1" stop-color="#020409"/></linearGradient></defs>
- <style>.cursor{animation:blink 1.4s steps(2,end) infinite}.signal{stroke-dasharray:5 10;animation:signal 4s linear infinite}@keyframes blink{50%{opacity:0}}@keyframes signal{to{stroke-dashoffset:-90}}@media(prefers-reduced-motion:reduce){.cursor,.signal{animation:none}}</style>
- <rect x="1" y="1" width="958" height="258" rx="18" fill="url(#bg)" stroke="#173353"/>
- <path d="M1 43H959M560 43V259" stroke="#173353"/>
- <circle cx="24" cy="23" r="4" fill="#1d4ed8"/><circle cx="40" cy="23" r="4" fill="#60a5fa"/><circle cx="56" cy="23" r="4" fill="#38a3ff"/>
- <g font-family="Consolas,monospace" font-size="16"><text x="79" y="28" fill="#a5b4cf" font-size="12">oscar.config.ts</text>
- <text x="28" y="82" fill="#93c5fd">const <tspan fill="#f1f5f9">oscar</tspan> = {</text>
- <text x="48" y="115" fill="#a5b4cf">comunidad: <tspan fill="#38a3ff">'Discord &amp; bots'</tspan>,</text>
- <text x="48" y="148" fill="#a5b4cf">herramientas: <tspan fill="#38a3ff">'ideas reutilizables'</tspan>,</text>
- <text x="48" y="181" fill="#a5b4cf">servidores: <tspan fill="#38a3ff">'FiveM'</tspan></text>
- <text x="28" y="216" fill="#93c5fd">};</text><rect class="cursor" x="52" y="202" width="9" height="18" fill="#38a3ff"/>
- <text x="592" y="83" fill="#2563eb" font-size="11" letter-spacing="3">DE LA IDEA AL PROYECTO</text>
- <path class="signal" d="M605 110V219" stroke="#38a3ff" fill="none"/>
- <g fill="#05090f" stroke="#38a3ff"><circle cx="605" cy="114" r="5"/><circle cx="605" cy="163" r="5"/><circle cx="605" cy="212" r="5"/></g>
- <g fill="#e2e8f0"><text x="628" y="120">Pensar una solución</text><text x="628" y="169">Construir y experimentar</text><text x="628" y="218">Compartir lo aprendido</text></g></g>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-labelledby="title desc">
+<title id="title">Pensar, construir y compartir</title>
+<desc id="desc">Configuración ilustrada de Oscar y su proceso: entender, experimentar y compartir lo aprendido.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081629"/><stop offset=".55" stop-color="#040a14"/><stop offset="1" stop-color="#020409"/></linearGradient>
+<linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#2563eb" stop-opacity=".32"/><stop offset=".5" stop-color="#1061d6" stop-opacity=".12"/><stop offset="1" stop-color="#1061d6" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#588ac3" stroke-opacity=".075"/></pattern>
+</defs>
+<style>text{font-family:Segoe UI,Inter,Arial,sans-serif}.mono{font-family:Cascadia Code,Consolas,monospace}
+.orbit{animation:orbit 32s linear infinite;transform-origin:760px 205px}
+.counter{animation:orbit 48s linear infinite reverse;transform-origin:760px 205px}
+.signal{stroke-dasharray:8 140;animation:signal 7s linear infinite}
+.breathe{animation:breathe 6s ease-in-out infinite alternate}
+.cursor{animation:blink 1.4s steps(2,end) infinite}
+.float{animation:float 8s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes signal{to{stroke-dashoffset:-296}}
+@keyframes breathe{to{opacity:.45}}
+@keyframes blink{50%{opacity:0}}
+@keyframes float{to{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.avatar-decoration{display:none}}
+</style>
+<rect x="1" y="1" width="958" height="328" rx="20" fill="url(#bg)" stroke="#1c3553"/><rect x="2" y="2" width="956" height="326" rx="20" fill="url(#grid)"/><path d="M1 49H959M566 49V329" stroke="#1c3553"/><g fill="#416da0"><circle cx="26" cy="25" r="4"/><circle cx="42" cy="25" r="4"/><circle cx="58" cy="25" r="4"/></g><text x="80" y="30" font-size="13" fill="#a9bed8" class="mono">ideas / oscar.config.ts</text><text x="29" y="92" font-size="18" fill="#9dcaff" class="mono">const oscar = {</text><text x="49" y="133" font-size="18" fill="#c9ddf6" class="mono">web: [&#x27;SvelteKit&#x27;, &#x27;React&#x27;],</text><text x="49" y="174" font-size="18" fill="#c9ddf6" class="mono">sistemas: [&#x27;Linux&#x27;, &#x27;Windows Server&#x27;],</text><text x="49" y="215" font-size="18" fill="#c9ddf6" class="mono">contenedores: &#x27;Docker / Compose&#x27;,</text><text x="49" y="256" font-size="18" fill="#c9ddf6" class="mono">comunidad: &#x27;Discord / FiveM&#x27;</text><text x="29" y="298" font-size="18" fill="#9dcaff" class="mono">};</text><rect class="cursor" x="62" y="282" width="9" height="21" fill="#38a3ff"/><text x="598" y="91" font-size="23" fill="#e7f2ff" font-weight="650">De la idea al proyecto</text><path d="M611 133V283" stroke="#234f7c"/><path class="signal" d="M611 133V283" stroke="#78c5ff" stroke-width="2"/><circle cx="611" cy="137" r="6" fill="#0c223b" stroke="#63b6ff"/><text x="631" y="143" font-size="20" fill="#e4f2ff" font-weight="600">Pensar</text><text x="631" y="166" font-size="14" fill="#a9bed8" >Entender el problema.</text><circle cx="611" cy="201" r="6" fill="#0c223b" stroke="#63b6ff"/><text x="631" y="207" font-size="20" fill="#e4f2ff" font-weight="600">Construir</text><text x="631" y="230" font-size="14" fill="#a9bed8" >Probar, ajustar y experimentar.</text><circle cx="611" cy="265" r="6" fill="#0c223b" stroke="#63b6ff"/><text x="631" y="271" font-size="20" fill="#e4f2ff" font-weight="600">Compartir</text><text x="631" y="294" font-size="14" fill="#a9bed8" >Dejar algo que pueda servir.</text>
 </svg>

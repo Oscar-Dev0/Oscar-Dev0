@@ -1,33 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-labelledby="title desc">
-  <title id="title">Oscar Dev</title>
-  <desc id="desc">Código, comunidad y curiosidad desde Costa Rica. Una terminal con una órbita animada.</desc>
-  <defs>
-    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071120"/><stop offset="1" stop-color="#020409"/></linearGradient>
-    <linearGradient id="accent"><stop stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#12243b" stroke-opacity=".35"/></pattern>
-  </defs>
-  <style>
-    .orbit{transform-origin:780px 158px;animation:orbit 24s linear infinite}.cursor{animation:blink 1.6s steps(2,end) infinite}
-    @keyframes orbit{to{transform:rotate(360deg)}}@keyframes blink{50%{opacity:0}}
-    @media(prefers-reduced-motion:reduce){.orbit,.cursor{animation:none}}
-  </style>
-  <rect width="960" height="330" rx="20" fill="url(#bg)"/>
-  <rect width="960" height="330" rx="20" fill="url(#grid)"/>
-  <path d="M24 1H936" stroke="url(#accent)" stroke-width="2"/>
-  <path d="M1 86V24Q1 1 24 1H112M848 329H936Q959 329 959 306V246" fill="none" stroke="#2563eb" stroke-width="2" opacity=".7"/>
-  <path d="M48 239H410" stroke="#173353"/>
-  <g font-family="ui-monospace,Consolas,monospace">
-    <circle cx="40" cy="32" r="5" fill="#1d4ed8"/><circle cx="58" cy="32" r="5" fill="#60a5fa"/><circle cx="76" cy="32" r="5" fill="#38a3ff"/>
-    <text x="108" y="37" fill="#94a3b8" font-size="12">oscar@costa-rica ~ / ideas</text>
-    <text x="48" y="103" fill="#38a3ff" font-size="14" letter-spacing="3">DESARROLLADOR · COSTA RICA</text>
-    <text x="44" y="177" fill="#f1f5f9" font-size="66" font-weight="700" letter-spacing="-3">Oscar Dev<tspan fill="#38a3ff">.</tspan></text>
-    <text x="48" y="217" fill="#b5c3d7" font-size="17">Código, comunidad y curiosidad.</text>
-    <text x="48" y="283" fill="#38a3ff" font-size="14">❯</text><text x="70" y="283" fill="#cbd5e1" font-size="14">construyendo ideas con código</text>
-    <rect class="cursor" x="326" y="270" width="8" height="16" fill="#38a3ff"/>
-  </g>
-  <circle cx="780" cy="158" r="103" fill="none" stroke="#153053"/>
-  <circle cx="780" cy="158" r="76" fill="#071120" stroke="#1e4d80" stroke-dasharray="3 8"/>
-  <g class="orbit"><ellipse cx="780" cy="158" rx="122" ry="46" fill="none" stroke="#38a3ff" stroke-opacity=".6" transform="rotate(-35 780 158)"/><circle cx="880" cy="99" r="6" fill="#38a3ff"/><circle cx="677" cy="214" r="4" fill="#2563eb"/></g>
-  <text x="780" y="177" text-anchor="middle" font-family="Consolas,monospace" font-size="52" fill="#e2e8f0">&lt;/&gt;</text>
-  <text x="780" y="299" text-anchor="middle" font-family="Consolas,monospace" font-size="11" letter-spacing="4" fill="#94a3b8">PURA VIDA</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+<title id="title">Oscar Dev · Del código al servidor</title>
+<desc id="desc">Programador de Costa Rica. React, SvelteKit, Linux, Docker, Windows Server, Discord y FiveM. Núcleo orbital y prompt de Linux ilustrado.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081629"/><stop offset=".55" stop-color="#040a14"/><stop offset="1" stop-color="#020409"/></linearGradient>
+<linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#2563eb" stop-opacity=".32"/><stop offset=".5" stop-color="#1061d6" stop-opacity=".12"/><stop offset="1" stop-color="#1061d6" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#588ac3" stroke-opacity=".075"/></pattern>
+</defs>
+<style>text{font-family:Segoe UI,Inter,Arial,sans-serif}.mono{font-family:Cascadia Code,Consolas,monospace}
+.orbit{animation:orbit 32s linear infinite;transform-origin:760px 205px}
+.counter{animation:orbit 48s linear infinite reverse;transform-origin:760px 205px}
+.signal{stroke-dasharray:8 140;animation:signal 7s linear infinite}
+.breathe{animation:breathe 6s ease-in-out infinite alternate}
+.cursor{animation:blink 1.4s steps(2,end) infinite}
+.float{animation:float 8s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes signal{to{stroke-dashoffset:-296}}
+@keyframes breathe{to{opacity:.45}}
+@keyframes blink{50%{opacity:0}}
+@keyframes float{to{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.avatar-decoration{display:none}}
+</style>
+<rect x="1" y="1" width="958" height="418" rx="24" fill="url(#bg)" stroke="#1c3553"/>
+<rect x="2" y="2" width="956" height="416" rx="24" fill="url(#grid)"/>
+<ellipse cx="760" cy="205" rx="258" ry="235" fill="url(#halo)"/>
+<path d="M25 1H935" stroke="url(#blue)" stroke-width="2"/>
+<path d="M34 43h14m-7-7v14M912 43h14m-7-7v14" stroke="#477aaa"/>
+<path d="M40 350H490M40 350v-6M490 350v-6" stroke="#24415e"/>
+<text x="64" y="48" font-size="13" fill="#a9bed8" class="mono">Oscar-Dev0 / software developer</text><text x="40" y="107" font-size="17" fill="#83bbef" >Desde Costa Rica, para tus ideas.</text><text x="36" y="190" font-size="78" fill="#f4f9ff" font-weight="750" letter-spacing="-4">Oscar Dev.</text><text x="40" y="239" font-size="29" fill="#deebff" font-weight="500">Del código al servidor.</text><text x="40" y="271" font-size="17" fill="#a9bed8" >Web, bots, herramientas e infraestructura.</text>
+<g class="mono" font-size="12" fill="#c4dcf7">
+<rect x="40" y="298" width="141" height="29" rx="14.5" fill="#0b203a" stroke="#234b76"/><text x="58" y="317">React / SvelteKit</text>
+<rect x="191" y="298" width="134" height="29" rx="14.5" fill="#0b203a" stroke="#234b76"/><text x="209" y="317">Linux / Docker</text>
+<rect x="335" y="298" width="113" height="29" rx="14.5" fill="#0b203a" stroke="#234b76"/><text x="353" y="317">FiveM / Lua</text>
+</g>
+<text x="40" y="383" font-size="13" fill="#89c7ff" class="mono">oscar@linux</text><text x="135" y="383" font-size="13" fill="#b8cfe9" class="mono">:~/projects $ git status</text><rect class="cursor" x="334" y="369" width="7" height="15" fill="#38a3ff"/>
+<g fill="#a6dcff" class="breathe"><circle cx="615" cy="66" r="1.5"/><circle cx="871" cy="56" r="2"/><circle cx="921" cy="179" r="1"/><circle cx="598" cy="292" r="2"/><circle cx="890" cy="334" r="1.5"/><circle cx="652" cy="349" r="1"/><circle cx="809" cy="29" r="1"/><circle cx="924" cy="81" r="1"/></g>
+<g fill="none" stroke="#3b689a" stroke-width="1"><path d="M760 49v10" transform="rotate(0 760 205)"/><path d="M760 49v4" transform="rotate(6 760 205)"/><path d="M760 49v4" transform="rotate(12 760 205)"/><path d="M760 49v4" transform="rotate(18 760 205)"/><path d="M760 49v4" transform="rotate(24 760 205)"/><path d="M760 49v10" transform="rotate(30 760 205)"/><path d="M760 49v4" transform="rotate(36 760 205)"/><path d="M760 49v4" transform="rotate(42 760 205)"/><path d="M760 49v4" transform="rotate(48 760 205)"/><path d="M760 49v4" transform="rotate(54 760 205)"/><path d="M760 49v10" transform="rotate(60 760 205)"/><path d="M760 49v4" transform="rotate(66 760 205)"/><path d="M760 49v4" transform="rotate(72 760 205)"/><path d="M760 49v4" transform="rotate(78 760 205)"/><path d="M760 49v4" transform="rotate(84 760 205)"/><path d="M760 49v10" transform="rotate(90 760 205)"/><path d="M760 49v4" transform="rotate(96 760 205)"/><path d="M760 49v4" transform="rotate(102 760 205)"/><path d="M760 49v4" transform="rotate(108 760 205)"/><path d="M760 49v4" transform="rotate(114 760 205)"/><path d="M760 49v10" transform="rotate(120 760 205)"/><path d="M760 49v4" transform="rotate(126 760 205)"/><path d="M760 49v4" transform="rotate(132 760 205)"/><path d="M760 49v4" transform="rotate(138 760 205)"/><path d="M760 49v4" transform="rotate(144 760 205)"/><path d="M760 49v10" transform="rotate(150 760 205)"/><path d="M760 49v4" transform="rotate(156 760 205)"/><path d="M760 49v4" transform="rotate(162 760 205)"/><path d="M760 49v4" transform="rotate(168 760 205)"/><path d="M760 49v4" transform="rotate(174 760 205)"/><path d="M760 49v10" transform="rotate(180 760 205)"/><path d="M760 49v4" transform="rotate(186 760 205)"/><path d="M760 49v4" transform="rotate(192 760 205)"/><path d="M760 49v4" transform="rotate(198 760 205)"/><path d="M760 49v4" transform="rotate(204 760 205)"/><path d="M760 49v10" transform="rotate(210 760 205)"/><path d="M760 49v4" transform="rotate(216 760 205)"/><path d="M760 49v4" transform="rotate(222 760 205)"/><path d="M760 49v4" transform="rotate(228 760 205)"/><path d="M760 49v4" transform="rotate(234 760 205)"/><path d="M760 49v10" transform="rotate(240 760 205)"/><path d="M760 49v4" transform="rotate(246 760 205)"/><path d="M760 49v4" transform="rotate(252 760 205)"/><path d="M760 49v4" transform="rotate(258 760 205)"/><path d="M760 49v4" transform="rotate(264 760 205)"/><path d="M760 49v10" transform="rotate(270 760 205)"/><path d="M760 49v4" transform="rotate(276 760 205)"/><path d="M760 49v4" transform="rotate(282 760 205)"/><path d="M760 49v4" transform="rotate(288 760 205)"/><path d="M760 49v4" transform="rotate(294 760 205)"/><path d="M760 49v10" transform="rotate(300 760 205)"/><path d="M760 49v4" transform="rotate(306 760 205)"/><path d="M760 49v4" transform="rotate(312 760 205)"/><path d="M760 49v4" transform="rotate(318 760 205)"/><path d="M760 49v4" transform="rotate(324 760 205)"/><path d="M760 49v10" transform="rotate(330 760 205)"/><path d="M760 49v4" transform="rotate(336 760 205)"/><path d="M760 49v4" transform="rotate(342 760 205)"/><path d="M760 49v4" transform="rotate(348 760 205)"/><path d="M760 49v4" transform="rotate(354 760 205)"/></g>
+<circle cx="760" cy="205" r="141" fill="none" stroke="#193b65"/>
+<g class="orbit" fill="none"><circle cx="760" cy="205" r="128" stroke="#38a3ff" stroke-width="2" stroke-dasharray="164 35 12 593"/><circle cx="760" cy="77" r="5" fill="#b8e8ff" stroke="#38a3ff"/><circle cx="760" cy="77" r="10" fill="#38a3ff" opacity=".18"/></g>
+<g class="counter" fill="none"><circle cx="760" cy="205" r="110" stroke="#3865bc" stroke-dasharray="2 9"/><path d="M650 205a110 110 0 0 1 110-110" stroke="#89c7ff" stroke-width="2"/></g>
+<path d="M603 205h46M871 205h46M760 48v30M760 334v28" stroke="#27466a"/>
+<g class="float"><path d="m760 124 70 40v82l-70 40-70-40v-82Z" fill="#071327" stroke="#286bb0"/>
+<path d="m760 139 57 33v66l-57 33-57-33v-66Z" fill="#081b35" stroke="#38a3ff" stroke-opacity=".4"/>
+<path d="m732 187-17 18 17 18m56-36 17 18-17 18m-22-44-13 48" fill="none" stroke="#bcE6ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m760 124 70 40-13 8m-127 74 13-8 57 33v15" fill="none" stroke="#70baff" stroke-width="2"/></g>
+<text x="760" y="389" font-size="13" fill="#94b9e0" text-anchor="middle">Pura vida. Puro código.</text>
 </svg>

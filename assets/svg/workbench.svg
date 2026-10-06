@@ -1,13 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="174" viewBox="0 0 960 174" role="img" aria-labelledby="title desc">
-  <title id="title">Mi mesa de trabajo</title><desc id="desc">Discord y bots; librerías y herramientas; FiveM y servidores.</desc>
-  <style>.flow{stroke-dasharray:6 12;animation:flow 3s linear infinite}@keyframes flow{to{stroke-dashoffset:-72}}@media(prefers-reduced-motion:reduce){.flow{animation:none}}</style>
-  <g fill="#05090f" stroke="#173353"><rect x="1" y="1" width="302" height="172" rx="16"/><rect x="329" y="1" width="302" height="172" rx="16"/><rect x="657" y="1" width="302" height="172" rx="16"/></g>
-  <path d="M25 1H105M353 1H433M681 1H761" stroke="#38a3ff" stroke-width="2"/>
-  <path class="flow" d="M303 87H329M631 87H657" stroke="#38a3ff" stroke-width="2"/>
-  <g font-family="Consolas,monospace">
-    <g fill="#38a3ff" font-size="12" letter-spacing="2"><text x="25" y="34">01 / COMUNIDAD</text><text x="353" y="34">02 / HERRAMIENTAS</text><text x="681" y="34">03 / SERVIDORES</text></g>
-    <g fill="#f1f5f9" font-size="22" font-weight="bold"><text x="25" y="78">Discord &amp; bots</text><text x="353" y="78">Dev toolkit</text><text x="681" y="78">FiveM &amp; Lua</text></g>
-    <g fill="#aabbd1" font-size="13"><text x="25" y="109">Bots modulares y tarjetas</text><text x="353" y="109">Librerías y utilidades</text><text x="681" y="109">Recursos y editores visuales</text></g>
-    <g fill="#2563eb" font-size="12"><text x="25" y="146">TypeScript · Canvas</text><text x="353" y="146">Node.js · Python · Go</text><text x="681" y="146">Lua · JavaScript · MySQL</text></g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="370" viewBox="0 0 960 370" role="img" aria-labelledby="title desc">
+<title id="title">Lo que me gusta construir</title>
+<desc id="desc">Desarrollo web, comunidades de Discord, herramientas e infraestructura con Linux, Docker y Windows Server.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081629"/><stop offset=".55" stop-color="#040a14"/><stop offset="1" stop-color="#020409"/></linearGradient>
+<linearGradient id="blue" x2="1" y2=".5"><stop stop-color="#a6dcff"/><stop offset=".45" stop-color="#38a3ff"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+<radialGradient id="halo"><stop stop-color="#2563eb" stop-opacity=".32"/><stop offset=".5" stop-color="#1061d6" stop-opacity=".12"/><stop offset="1" stop-color="#1061d6" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#588ac3" stroke-opacity=".075"/></pattern>
+</defs>
+<style>text{font-family:Segoe UI,Inter,Arial,sans-serif}.mono{font-family:Cascadia Code,Consolas,monospace}
+.orbit{animation:orbit 32s linear infinite;transform-origin:760px 205px}
+.counter{animation:orbit 48s linear infinite reverse;transform-origin:760px 205px}
+.signal{stroke-dasharray:8 140;animation:signal 7s linear infinite}
+.breathe{animation:breathe 6s ease-in-out infinite alternate}
+.cursor{animation:blink 1.4s steps(2,end) infinite}
+.float{animation:float 8s ease-in-out infinite alternate}
+@keyframes orbit{to{transform:rotate(360deg)}}
+@keyframes signal{to{stroke-dashoffset:-296}}
+@keyframes breathe{to{opacity:.45}}
+@keyframes blink{50%{opacity:0}}
+@keyframes float{to{transform:translateY(-7px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.avatar-decoration{display:none}}
+</style>
+<rect x="1" y="1" width="958" height="368" rx="20" fill="url(#bg)" stroke="#1c3553"/><path d="M480 24v322M24 185H936" stroke="#1c3553"/><g transform="translate(424 52) scale(0.65)" fill="#091a30" stroke="#82c6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="-27" y="-22" width="54" height="44" rx="5"/><path d="M-27-10h54m-13 8 8 7-8 7m-28-14-8 7 8 7m13-17-6 20"/></g><text x="26" y="48" font-size="26" fill="#edf6ff" font-weight="650">Desarrollo web</text><text x="26" y="91" font-size="18" fill="#bedcff" >Interfaces y aplicaciones.</text><text x="26" y="131" font-size="14" fill="#8fb9e3" class="mono">React / SvelteKit / TypeScript</text><path d="M26 157H454" stroke="#20436d"/><path class="signal" d="M26 157H454" stroke="#60b6ff" stroke-width="1.5" style="animation-delay:-0s"/><g transform="translate(904 52) scale(0.65)" fill="#091a30" stroke="#82c6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="-24" y="-17" width="48" height="36" rx="10"/><path d="M0-17v-9M-24-2h-6v12h6M24-2h6v12h-6M-8 11H8"/><circle cx="0" cy="-29" r="3"/><circle cx="-10" cy="-1" r="3"/><circle cx="10" cy="-1" r="3"/></g><text x="506" y="48" font-size="26" fill="#edf6ff" font-weight="650">Comunidades</text><text x="506" y="91" font-size="18" fill="#bedcff" >Bots modulares y tarjetas.</text><text x="506" y="131" font-size="14" fill="#8fb9e3" class="mono">Discord / Seyfert / Canvas</text><path d="M506 157H934" stroke="#20436d"/><path class="signal" d="M506 157H934" stroke="#60b6ff" stroke-width="1.5" style="animation-delay:-2s"/><g transform="translate(424 237) scale(0.65)" fill="#091a30" stroke="#82c6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="-27" y="-21" width="54" height="42" rx="6"/><path d="m-15-6 9 8-9 8M1 11h14M-27-11h54"/></g><text x="26" y="233" font-size="26" fill="#edf6ff" font-weight="650">Herramientas</text><text x="26" y="276" font-size="18" fill="#bedcff" >Utilidades, librerías y recursos.</text><text x="26" y="316" font-size="14" fill="#8fb9e3" class="mono">Node.js / Python / Go / Lua</text><path d="M26 342H454" stroke="#20436d"/><path class="signal" d="M26 342H454" stroke="#60b6ff" stroke-width="1.5" style="animation-delay:-4s"/><g transform="translate(904 237) scale(0.65)" fill="#091a30" stroke="#82c6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M-29 4h49c10 0 13-8 13-8l-9-2-3-8-6 9M-28 4c1 19 36 24 49 0"/><path d="M-24-7h9V3h-9ZM-13-7h9V3h-9ZM-2-7h9V3h-9ZM9-7h9V3H9ZM-13-19h9v10h-9ZM-2-19h9v10h-9Z"/></g><text x="506" y="233" font-size="26" fill="#edf6ff" font-weight="650">Infraestructura</text><text x="506" y="276" font-size="18" fill="#bedcff" >Terminales, contenedores y servidores.</text><text x="506" y="316" font-size="14" fill="#8fb9e3" class="mono">Linux / Docker / Windows Server</text><path d="M506 342H934" stroke="#20436d"/><path class="signal" d="M506 342H934" stroke="#60b6ff" stroke-width="1.5" style="animation-delay:-6s"/>
 </svg>
